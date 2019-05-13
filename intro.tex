@@ -1,0 +1,61 @@
+%\vspace{-5pt}
+\section{Introduction}
+\label{sec:intro}
+%Rapid developments in computing, sensing and actuation have catalyzed the emergence of technology in our daily lives. 
+%Particularly, there is a dramatic increase in the use of sensing to automate mundane tasks and/or enable novel applications to improve our lifestyle. 
+%Due to miniaturization in computing and reduction in prices of cameras, a lot of such sensing is visual sensing. 
+%Cameras are enabling robots to be autonomous and assist in various tasks such as vacuuming our floors, act as tour guides in museums, drive our cars and manage inventory at warehouses. 
+%Similarly, cameras are being embedded in mobile devices such as smartphones, smart glasses and our gaming devices to enable augmented reality applications. 
+%Most such applications require a constant perception of the environment and spatial reasoning of the robot/mobile device with respect to that environment. 
+%%In robotics literature, these are referred to as the coupled problems of localization and mapping. 
+%Simultaneous Localization and Mapping (SLAM)~\cite{thrun:probotics} is the joint estimation of both a representation of the environment and the robot's position (state) with respect to the environment.  
+%
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.2\textwidth]{intro_images/rtabmap.png}
+%\includegraphics[width=0.2\textwidth]{intro_images/orbslam.png}
+%\caption{Two different representations of an environment. RGBD SLAM and RTAB-Map produce dense reconstructions (left) while ORB-SLAM generates sparse point clouds. (right)}
+%\label{fig:intro_maps}
+%\vspace{-19pt}
+%\end{figure}
+%need for SLAM
+Recent technology trends have enabled the deployment of robots and mobile devices in urban areas for applications such as telecommuting, augmented reality, service robotics, and others. Most such applications require spatial reasoning - identifying the device location as well as recognizing parts of the surrounding environment. In robotics literature, these are referred to as the coupled problems of localization and mapping - jointly called Simultaneous Localization and Mapping (SLAM). SLAM has been extensively researched in the last two decades. 
+Recent trends in sensing have seen the use of regular and depth cameras together (with sensors such as Microsoft Kinect) for 3D mapping. 
+RGBD SLAM~\cite{burgard:rgbd-slam}, RTAB-Map~\cite{rtabmap} and ORB-SLAM~\cite{orbslam} are more recent examples. 
+Of particular interest to this work is visual SLAM in indoor environments.
+Algorithms reasoning with RGBD sensors come with some challenges when performing SLAM indoors. \\
+%\kar{for each of these problems, we should cite some papers that also say these are problems}. \\
+Some of the common problems are:\\
+\textbf{Perceptual Aliasing}~\cite{perceptual_aliasing1,visual_wifi_2}\textbf{:} Indoor environments tend to be symmetric and repetitive. Corridors with bland walls and repeated patterns of doors and lights could potentially cause confusion between different similar places (wrong loop closure) resulting in faulty maps and bad localization. \\
+%Further, if the robot/mobile device loses position information (kidnapped robot), it might be extremely challenging to re-localize. \\
+\textbf{Computational Complexity}~\cite{computational_complexity1,memory_management2}\textbf{:} Cameras usually produce large volumes of data. 
+For example, MS Kinect has a frame rate of 30 fps and each frame has more than 300000 points including color and depth data. 
+This makes feature detection, matching and loop closure computationally more challenging, especially on resource constrained devices and over long runs.
+%Extracting and matching features between depth/RGB images are computationally intensive tasks. 
+%These comparisons need to be constantly made to estimate visual transformations and detect loops for correcting errors in the constructed map. 
+%In a graph-based SLAM algorithm (such as RGBD SLAM), the number of images for potential comparisons increase with time making it harder to run them online, especially over long runs. 
+%This is cause for innovation of several novel SLAM algorithms (such as RTAB-Map~\cite{rtabmap}). 
+%Wi-Fi Access Points are ubiquitous in most urban environments including airports, offices, malls, and homes. Most robots are equipped with Wi-Fi cards for connectivity. There has been some prior work on using Wi-Fi sensing for localization, and the use of this coarse localization to assist visual SLAM. However, there is no generic way to demonstrate the utility of Wi-Fi sensing to assist visual SLAM, which is the goal of this work.
+%As described above, a challenge for most visual SLAM algorithms is perceptual aliasing. 
+%Particularly in repetitive environments, relying completely on visual information for place recognition can cause faulty loop closures leading to poor maps and localization. 
+
+In a parallel trend, Wi-Fi radio is available on most robots or mobile devices and Wi-Fi Access Points are ubiquitous in most urban environments.
+Wi-Fi and visual sensing are complementary to each other. While Wi-Fi sensing is less reliable than visual sensing, it is immune to perceptual aliasing.
+The degree of detail in Wi-Fi data is much less than visual data and therefore requires much less processing time. 
+%These approaches are not utilized for saving computation time.
+%We hypothesize that Wi-Fi sensing is complementary to visual sensing, and resultant mapping/localization is correspondingly more accurate. 
+%Further, we could alleviate the computational complexity of loop closures by restricting such feature matching using Wi-Fi sensing resulting in improved computation times of SLAM algorithms. 
+In this work, we present a generic workflow to incorporate Wi-Fi sensing into visual SLAM algorithms in order to alleviate perceptual aliasing and high computational complexity. The contributions of this work are as follows:
+%\vspace{-8pt}
+\begin{itemize}
+\item We propose a general way to integrate Wi-Fi sensing with visual SLAM by using received signal strength as an indicator of coarse spatial locality. Unlike many other methods, our integration works in tandem with the visual SLAM operation without any requirement of prior Wi-Fi data collection phase. 
+\item We instrument three separate open-source visual SLAM systems (RGBD-SLAM, RTAB-Map, and ORB-SLAM) using our proposed technique to show the generality of our method.
+\item We run our algorithm on four datasets from four different buildings to experimentally demonstrate the benefits of augmenting the three SLAM systems with Wi-Fi sensing on these four datasets.
+\item We compare our work with the most recent state-of-the-art in WiFi-augmented visual sensing work which is Wi-Fi augmented FABMAP~\cite{visual_wifi_2}.
+\end{itemize}
+
+%The rest of the paper is as follows. In Section~\ref{sec:relwork}, we discuss prior work in the use of Wi-Fi for localization and mapping. 
+%\ref{sec:wifi} introduces how we use Wi-Fi as a sensing modality. Our metric for Wi-Fi similarity, and ways we integrate it in the three visual SLAM algorithms is detailed in Sections~\ref{sec:slam} and ~\ref{sec:soln}. Section~\ref{sec:eval} presents the benefits of augmenting visual SLAM with Wi-Fi using the five datasets we collected. 
+%Then, in \ref{sec:discussion}, we discuss implications of augmenting visual sensing with Wi-Fi. Finally, we conclude with thoughts on future work in Section~\ref{sec:conc}. 
+
+%\vspace{\vertspcpostsec}

@@ -1,0 +1,237 @@
+\begin{thebibliography}{}
+
+\bibitem[Belter et~al., 2016]{feature_spatial_1}
+Belter, D., Nowicki, M., and Skrzypczyński, P. (2016).
+\newblock Improving accuracy of feature-based rgb-d slam by modeling spatial
+  uncertainty of point features.
+\newblock In {\em 2016 IEEE International Conference on Robotics and Automation
+  (ICRA)}, pages 1279--1284. IEEE.
+
+\bibitem[Berkvens et~al., 2014]{visual-wifi-ratslam}
+Berkvens, R., Jacobson, A., Milford, M., Peremans, H., and Weyn, M. (2014).
+\newblock Biologically inspired slam using wi-fi.
+\newblock In {\em 2014 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems}, pages 1804--1811.
+
+\bibitem[Biswas and Veloso, 2010]{biswas-icra10}
+Biswas, J. and Veloso, M. (2010).
+\newblock Wifi localization and navigation for autonomous indoor mobile robots.
+\newblock In {\em 2010 IEEE International Conference on Robotics and
+  Automation}, pages 4379--4384.
+
+\bibitem[Clark et~al., 2016]{humanoid_wifi}
+Clark, R., Wang, S., Wen, H., Trigoni, N., and Markham, A. (2016).
+\newblock Increasing the efficiency of 6-dof visual localization using
+  multi-modal sensory data.
+\newblock In {\em Humanoid Robots (Humanoids), 2016 IEEE-RAS 16th International
+  Conference on}, pages 973--980. IEEE.
+
+\bibitem[Codd-Downey and Jenkin, 2017]{sens-fus-2}
+Codd-Downey, R. and Jenkin, M. (2017).
+\newblock On the utility of additional sensors in aquatic simultaneous
+  localization and mapping.
+\newblock In {\em 2017 IEEE International Conference on Robotics and Automation
+  (ICRA)}, pages 5163--5168.
+
+\bibitem[Cummins and Newman, 2008]{computational_complexity1}
+Cummins, M. and Newman, P. (2008).
+\newblock Accelerated appearance-only slam.
+\newblock In {\em 2008 IEEE International Conference on Robotics and
+  Automation}, pages 1828--1833.
+
+\bibitem[Dong et~al., 2015]{dong_sensys15}
+Dong, J., Xiao, Y., Noreikis, M., Ou, Z., and Yl{\"a}-J{\"a}{\"a}ski, A.
+  (2015).
+\newblock imoon: Using smartphones for image-based indoor navigation.
+\newblock In {\em Proceedings of the 13th ACM Conference on Embedded Networked
+  Sensor Systems}, pages 85--97. ACM.
+
+\bibitem[Engelhard et~al., 2011]{burgard:rgbd-slam}
+Engelhard, N., Endres, F., Hess, J., Sturm, J., and Burgard, W. (2011).
+\newblock Real-time 3{D} visual {SLAM} with a hand-held camera.
+\newblock In {\em Proc. of the RGB-D Workshop on 3D Perception in Robotics at
+  the European Robotics Forum}, Vasteras, Sweden.
+
+\bibitem[García et~al., 2016]{sens-fus-3}
+García, S., López, M.~E., Barea, R., Bergasa, L.~M., Gómez, A., and Molinos,
+  E.~J. (2016).
+\newblock Indoor slam for micro aerial vehicles control using monocular camera
+  and sensor fusion.
+\newblock In {\em 2016 International Conference on Autonomous Robot Systems and
+  Competitions (ICARSC)}, pages 205--210.
+
+\bibitem[Glover et~al., 2012]{glover2012openfabmap}
+Glover, A., Maddern, W., Warren, M., Reid, S., Milford, M., and Wyeth, G.
+  (2012).
+\newblock Openfabmap: An open source toolbox for appearance-based loop closure
+  detection.
+\newblock In {\em Robotics and automation (ICRA), 2012 IEEE international
+  conference on}, pages 4730--4735. IEEE.
+
+\bibitem[Heshmat et~al., 2013]{cam-oscillations}
+Heshmat, M., Abdellatif, M., and Abbas, H. (2013).
+\newblock Improving visual slam accuracy through deliberate camera
+  oscillations.
+\newblock In {\em 2013 IEEE International Symposium on Robotic and Sensors
+  Environments (ROSE)}, pages 154--159.
+
+\bibitem[Hess et~al., 2016]{cartographer}
+Hess, W., Kohler, D., Rapp, H., and Andor, D. (2016).
+\newblock Real-time loop closure in 2d lidar slam.
+\newblock In {\em Robotics and Automation (ICRA), 2016 IEEE International
+  Conference on}, pages 1271--1278. IEEE.
+
+\bibitem[Huang et~al., 2011]{thrun:wifi-slam}
+Huang, J., Millman, D., Quigley, M., Stavens, D., Thrun, S., and Aggarwal, A.
+  (2011).
+\newblock Efficient, generalized indoor wifi graphslam.
+\newblock In {\em 2011 IEEE International Conference on Robotics and
+  Automation}, pages 1038--1043.
+
+\bibitem[Ito et~al., 2014]{loc-unc-5}
+Ito, S., Endres, F., Kuderer, M., Tipaldi, G.~D., Stachniss, C., and Burgard,
+  W. (2014).
+\newblock W-rgb-d: Floor-plan-based indoor global localization using a depth
+  camera and wifi.
+\newblock In {\em 2014 IEEE International Conference on Robotics and Automation
+  (ICRA)}, pages 417--422.
+
+\bibitem[Jacobson et~al., 2015]{visual_wifi_3}
+Jacobson, A., Chen, Z., Rallabandi, V.~R., and Milford, M. (2015).
+\newblock Multi-scale place recognition with multi-scale sensing.
+\newblock In {\em Australasian Conference on Robotics and Automation (ACRA
+  2015)}, Canberra, A.C.T. Australasian Robotics and Automation Association.
+
+\bibitem[Kabsch, 1976]{kabsch}
+Kabsch, W. (1976).
+\newblock A solution for the best rotation to relate two sets of vectors.
+\newblock {\em Acta Crystallographica Section A: Crystal Physics, Diffraction,
+  Theoretical and General Crystallography}, 32(5):922--923.
+
+\bibitem[Karanam et~al., 2018]{karanam_ipsn18}
+Karanam, C.~R., Korany, B., and Mostofi, Y. (2018).
+\newblock Magnitude-based angle-of-arrival estimation, localization, and target
+  tracking.
+\newblock In {\em Proceedings of the 17th ACM/IEEE International Conference on
+  Information Processing in Sensor Networks}, pages 254--265. IEEE Press.
+
+\bibitem[Kejriwal et~al., 2016]{feature_spatial_3}
+Kejriwal, N., Kumar, S., and Shibata, T. (2016).
+\newblock High performance loop closure detection using bag of word pairs.
+\newblock {\em Robotics and Autonomous Systems}, 77:55--65.
+
+\bibitem[Kotaru et~al., 2015]{kotaru-sigcomm15}
+Kotaru, M., Joshi, K., Bharadia, D., and Katti, S. (2015).
+\newblock Spotfi: Decimeter level localization using wifi.
+\newblock In {\em Proceedings of the 2015 ACM Conference on Special Interest
+  Group on Data Communication}, SIGCOMM '15, pages 269--282, New York, NY, USA.
+  ACM.
+
+\bibitem[Kumar et~al., 2018]{kumar2018indoor}
+Kumar, S.~S., Gil, S., Katabi, D., and Rus, D. (2018).
+\newblock Indoor localization of a multi-antenna receiver.
+\newblock US Patent 9,885,774.
+
+\bibitem[Labbe and Michaud, 2014]{memory_management2}
+Labbe, M. and Michaud, F. (2014).
+\newblock Online global loop closure detection for large-scale multi-session
+  graph-based slam.
+\newblock In {\em Intelligent Robots and Systems (IROS 2014), 2014 IEEE/RSJ
+  International Conference on}, pages 2661--2666. IEEE.
+
+\bibitem[Labbé and Michaud, 2011]{memory_management}
+Labbé, M. and Michaud, F. (2011).
+\newblock Memory management for real-time appearance-based loop closure
+  detection.
+\newblock In {\em 2011 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems}, pages 1271--1276.
+
+\bibitem[Labbé and Michaud, 2013]{rtabmap}
+Labbé, M. and Michaud, F. (2013).
+\newblock Appearance-based loop closure detection for online large-scale and
+  long-term operation.
+\newblock {\em IEEE Transactions on Robotics}, 29(3):734--745.
+
+\bibitem[Luo et~al., 2014]{luo-ipsn14}
+Luo, C., Hong, H., and Chan, M.~C. (2014).
+\newblock Piloc: A self-calibrating participatory indoor localization system.
+\newblock In {\em Proceedings of the 13th International Symposium on
+  Information Processing in Sensor Networks}, IPSN '14, pages 143--154,
+  Piscataway, NJ, USA. IEEE Press.
+
+\bibitem[Mur-Artal and Tard\'os, 2017]{orbslam}
+Mur-Artal, R. and Tard\'os, J.~D. (2017).
+\newblock {ORB-SLAM2}: an open-source {SLAM} system for monocular, stereo and
+  {RGB-D} cameras.
+\newblock {\em IEEE Transactions on Robotics}, 33(5):1255--1262.
+
+\bibitem[Nguyen et~al., 2016]{wifi-n-slam-2}
+Nguyen, D.~V., Recalde, M. E.~V., and Nashashibi, F. (2016).
+\newblock Low speed vehicle localization using wifi fingerprinting.
+\newblock In {\em 2016 14th International Conference on Control, Automation,
+  Robotics and Vision (ICARCV)}, pages 1--5.
+
+\bibitem[Nowakowski et~al., 2017]{visual_wifi_2}
+Nowakowski, M., Joly, C., Dalibard, S., Garcia, N., and Moutarde, F. (2017).
+\newblock Topological localization using wi-fi and vision merged into fabmap
+  framework.
+\newblock In {\em 2017 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}, pages 3339--3344.
+
+\bibitem[Nowicki, 2014]{visual_wifi_1}
+Nowicki, M. (2014).
+\newblock Wifi-guided visual loop closure for indoor navigation using mobile
+  devices.
+\newblock {\em Journal of Automation Mobile Robotics and Intelligent Systems},
+  8(3):10--18.
+
+\bibitem[Quattoni and Torralba, 2009]{quattoni_cvpr09}
+Quattoni, A. and Torralba, A. (2009).
+\newblock Recognizing indoor scenes.
+\newblock In {\em Computer Vision and Pattern Recognition, 2009. CVPR 2009.
+  IEEE Conference on}, pages 413--420. IEEE.
+
+\bibitem[Quigley et~al., 2010]{thrun:cam-wifi}
+Quigley, M., Stavens, D., Coates, A., and Thrun, S. (2010).
+\newblock Sub-meter indoor localization in unmodified environments with
+  inexpensive sensors.
+\newblock In {\em 2010 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems}, pages 2039--2046.
+
+\bibitem[Soltanaghaei et~al., 2018]{soltanaghaei-mobisys18}
+Soltanaghaei, E., Kalyanaraman, A., and Whitehouse, K. (2018).
+\newblock Multipath triangulation: Decimeter-level wifi localization and
+  orientation with a single unaided receiver.
+\newblock In {\em Proceedings of the 16th Annual International Conference on
+  Mobile Systems, Applications, and Services}, MobiSys '18, pages 376--388, New
+  York, NY, USA. ACM.
+
+\bibitem[Xia et~al., 2016]{perceptual_aliasing1}
+Xia, Y., Li, J., Qi, L., and Fan, H. (2016).
+\newblock Loop closure detection for visual slam using pcanet features.
+\newblock In {\em 2016 International Joint Conference on Neural Networks
+  (IJCNN)}, pages 2274--2281.
+
+\bibitem[Yang et~al., 2016]{yang_icra16}
+Yang, S., Maturana, D., and Scherer, S. (2016).
+\newblock Real-time 3d scene layout from a single image using convolutional
+  neural networks.
+\newblock In {\em Robotics and automation (ICRA), 2016 IEEE international
+  conference on}. IEEE.
+
+\bibitem[Yang et~al., 2014]{loc-unc-7}
+Yang, S.~W., Yang, S.~X., and Yang, L. (2014).
+\newblock Method of improving wifi slam based on spatial and temporal
+  coherence.
+\newblock In {\em 2014 IEEE International Conference on Robotics and Automation
+  (ICRA)}, pages 1991--1996.
+
+\bibitem[Yang et~al., 2012]{yang-mobicom12}
+Yang, Z., Wu, C., and Liu, Y. (2012).
+\newblock Locating in fingerprint space: Wireless indoor localization with
+  little human intervention.
+\newblock In {\em Proceedings of the 18th Annual International Conference on
+  Mobile Computing and Networking}, Mobicom '12, pages 269--280, New York, NY,
+  USA. ACM.
+
+\end{thebibliography}

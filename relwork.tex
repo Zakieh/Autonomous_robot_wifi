@@ -1,0 +1,84 @@
+%\vspace{-5pt}
+\section{Related work}
+\label{sec:relwork}
+%\vspace{\vertspcposthead}
+%\zaki{In this section, we review existing work in literature which relate to our contributions.} 
+There has been a lot of research on SLAM. We will present representative work. 
+
+\textbf{Visual SLAM:} Prior work on SLAM has been done with multiple sensors including RGB and RGBD cameras, 2D and 3D LiDARs, 2D and 3D sonar sensors~\cite{burgard:rgbd-slam,cartographer}. 
+%Prominent among these are visual SLAM systems that use visual features to match observations.% and further use these matches to estimate transformations between robot poses and landmarks. 
+%SIFT~\cite{sift}, SURF~\cite{surf} and ORB~\cite{orb} are popular feature detectors used in visual SLAM algorithms. 
+%While these visual features are generally designed to be as sparse as possible so as to manage execution time, their extraction and matching dominates the computation time in the end. 
+%Also, all visual feature matching algorithms suffer from perceptual aliasing which causes failure in visually repetitive places. 
+%This is common in some indoor environments. 
+%SLAM using RGBD cameras has become prevalent in recent years and several SLAM algorithms are designed to use such sensors. 
+A recent trend has been the use of color images with depth images. Some of more well-known visual SLAM examples include RGBD SLAM~\cite{burgard:rgbd-slam}, RTAB-Map~\cite{rtabmap}, and ORB-SLAM~\cite{orbslam}. 
+Since we instrument these algorithms, they will be discussed in detail in Section~\ref{sec:soln}.
+%These are graph-based SLAM algorithms with different approaches toward loop closure detection.~\cite{burgard:rgbd-slam} performs a heuristic search for frame selection for comparison,~\cite{rtabmap} keeps a list of frames which are believed to be useful for loop detection based on their proximity to current frame or frequent number of common features, and~\cite{orbslam} creates an inverted index of visual words to frames for retrieval of all frames having common words with current frame. 
+
+\textbf{Wi-Fi Localization/SLAM:} 
+%Capitalizing on the ubiquity of the 802.11 wireless technology, some localization and mapping methods using COTS wireless cards as sensors have been proposed. 
+In robotics literature, there has been research on Wi-Fi localization~\cite{biswas-icra10,loc-unc-5} as well as Wi-Fi SLAM~\cite{loc-unc-7,thrun:wifi-slam,wifi-n-slam-2}. 
+%In~\cite{thrun:wifi-slam}, the authors propose a method to perform SLAM using only Wi-Fi sensors and achieve a localization accuracy of 1.75m to 2.18m.%
+%~\cite{biswas-icra10} models the world as a WiFi signal strength map with geometric constraints and uses Wi-Fi sensing as a continuous sensor to update robot location. 
+%~\cite{loc-unc-6, wifi-n-slam-2} propose methods to perform localization based on Wi-Fi signal strength using Wi-Fi fingerprinting and Gaussian Processes. 
+Similarly, wireless localization is a hot topic in mobile computing.~\cite{yang-mobicom12,luo-ipsn14} use wireless fingerprinting for localization. 
+SpotFi~\cite{kotaru-sigcomm15}, Monoloco~\cite{soltanaghaei-mobisys18} and \cite{karanam_ipsn18} use channel state information (CSI) to achieve decimeter-level localization. 
+\cite{kumar2018indoor} employ CSI and inertial measurements for delivering more accurate localization. 
+\zaki{In these literature, RSSI or CSI is the only sensing method employed for localization/SLAM and most of them require a training phase for creating a map of Wi-Fi data.}
+%Another proposal~\cite{wifi-n-slam-1} adapts a Bayesian framework for SLAM using Inertial Measurement Units and Wi-Fi sensing. 
+%In~\cite{signal-slam}, the authors propose using Wi-Fi along with other sensor data such as Bluetooth, magnetic field magnitude, NFC etc., to build signal maps for localization of people. 
+%Similarly, there has been significant research on wireless localization in the mobile systems and mobile networking literature. 
+%In the interest of space, we cite some representative ones.
+%~\cite{chintalapudi-mobicom10} addressed the challenge of pre-deployment effort for wifi localization. 
+%The authors propose a central EZ localization algorithm that incorporates the physics of wireless propagation, limited known positions and streams of wireless measurements from various devices in an indoor environment using a genetic algorithm to achieve accurate location information. 
+%Zee~\cite{rai-mobicom12} improves this by using inertial sensors onboard mobile devices to reduce the calibration effort and crowd source WiFi fingerprints in a building. 
+
+\textbf{Perceptual Aliasing:} %There has been significant effort to overcome perceptual aliasing in visual SLAM algorithms. 
+\cite{cam-oscillations} incorporates a hardware solution to enhance feature measurements and localization by adding lateral motion to the camera.~\cite{sens-fus-2,sens-fus-3} combine information from multiple sensors for increasing localization and mapping accuracy.
+%In~\cite{histogram-features}, RGB and gray-scale histograms are used as additional features for bounding visual keypoints comparison.
+~\cite{feature_spatial_1} utilizes spatial uncertainties caused by actual measurements and image processing for better tracking.
+Some approaches take into account different kinds of spatial information of image features in order to alleviate perceptual aliasing~\cite{feature_spatial_3}. %~\cite{feature_spatial_2, feature_spatial_3}. %caused by Bag Of Words methods
+Recently, deep learning solutions are used for extracting better image descriptors which leads to more accurate place recognition~\cite{perceptual_aliasing1}.
+%\cite{loc-acc-1} is in chinese languauge!
+%\cite{loc-acc-2} didn't understand it that much!
+%\cite{loc-acc-3} it uses some kind of artificial beacons on the sea surface for improved SLAM.
+%\cite{feature_spatial_2} utilizes spatial information of image features for overcoming perceptual aliasing caused by BOW approaches.
+%\cite{feature_spatial_3} uses relative spatial co-occurrence of words for overcoming perceptual aliasing caused by BOW approaches.
+%\cite{fast-features} this one is related to visual tracking, not SLAM
+
+\textbf{Computational Complexity:} Real-time performance is desirable in SLAM in some applications.
+~\cite{memory_management2} and \cite{memory_management} incorporate memory management techniques to isolate a small active portion of the map to perform loop-closures quicker and ensure sustained online operation.
+%\cite{memory_management} for handling large graphs in real-time.
+~\cite{computational_complexity1} enables rapid multi-hypothesis testing in appearance-only SLAM using some probabilistic bail-out condition.
+
+\textbf{Visual and Wi-Fi Integration:} Recent research has gravitated towards fusing alternate sensors, especially Wi-Fi, with visual sensing for improvements in localization accuracy.
+In~\cite{loc-unc-5}, they model WiFi signal strength using a Gaussian process and use it for finding an initial seed estimate of the robot's location which is then refined with RGBD data.
+~\cite{thrun:cam-wifi} utilizes a training phase for Wi-Fi modeling and then applies particle filters for fusing different sensors. % and \cite{stereo_RFID_1}
+%Wi-Fi guided global localization~\cite{visual_wifi_1} collects Wi-Fi signatures and visual images of different unique places during an initial phase. Then, in a separate localization phase, Wi-Fi scan is compared to database entries and upon a successful Wi-Fi match, the corresponding images are compared.
+%This work is the closest to our work, but they have not incorporated their work into any visual SLAM algorithm. 
+%\cite{visual_wifi_2} incorporates Wi-Fi sensing in FABMAP~\cite{fabmap}. 
+%They propose an approach for early fusion of Wi-Fi data and append the respective visual and Wi-Fi word vectors before running FABMAP. 
+%In their approach, due to their agent's motion behavior and simplicity, no RSSI information is used and only the presence and absence of APs is investigated.
+~\cite{visual_wifi_1,dong_sensys15} employ a mapping phase for collecting Wi-Fi signatures and visual images and utilize Wi-Fi data in localization phase for more accurate place recognition. 
+~\cite{humanoid_wifi} uses Wi-Fi sensing along with other sensing modalities for more accurate localization estimates in less time. They incorporate sensing information directly in the map and use Monte Carlo estimator policy to allow point-matching only in nodes which is more probable to succeed.
+While these research works take advantage of Wi-Fi data along with visual sensing for more accurate {\em localization}, none of them do SLAM and all of them employ an initial phase of Wi-Fi data collection or training which is later utilized for localization. 
+%Further, they do not provide a general way to integrate wireless sensing with SLAM like our work does. This allows researchers to integrate wireless sensing into future SLAM algorithms as well as current ones. 
+
+Closest to our work are~\cite{visual-wifi-ratslam,visual_wifi_3,visual_wifi_2}. % some research that integrate Wi-Fi and visual sensing
+In~\cite{visual-wifi-ratslam}, authors incorporate Wi-Fi sensing only when visual data is no longer applicable. Our proposal is different in that it actively uses Wi-Fi data along with visual data and is generic making it applicable any visual SLAM algorithm.
+%To demonstrate the improvements, we collect four datasets from four different buildings. We experimentally demonstrate the benefits of augmenting the three SLAM systems with Wi-Fi sensing on these four datasets. 
+In \cite{visual_wifi_3}, the authors propose a voting based metric to fuse sensor information to find loop closures whereas our approach is different in that the visual matches are allowed only if Wi-Fi based matches are made to improve runtime efficiency.
+FABMAP is augmented in \cite{visual_wifi_2} by tagging images with Wi-Fi vectors indicating the presence of APs. Apart from FABMAP being a topological SLAM, we use vectors of RSSI values instead of binary vectors. In section \ref{sec:eval}, we compare our approach with Wi-Fi augmented FABMAP in more detail.\\
+Overall, we'd also like to note that none of these works provide a general way to integrate Wi-Fi sensing with SLAM as our work does. This allows researchers to integrate wireless sensing into future SLAM algorithms as well as current ones. 
+% \kar{similar one sentence description of the next two papers also followed by a one line description of difference between our work and theirs. Lose the rest of the text. }
+% In terms of contribution, \cite{visual_wifi_3} and \cite{visual_wifi_2} seem to be the closest to the method proposed in this paper. However, there are notable differences as we discuss in sections \ref{sec:eval} and \ref{sec:discussion}. Of these, we compare the performance of our method to the more recent state of the art Wi-Fi augmented FabMap~\cite{visual_wifi_2}. 
+
+
+%While prior work has mostly used Wi-Fi sensing for improving localization and mapping in some specific ways, 
+%Unlike prior work, our proposed method generalizes the potential use of wireless sensing, and deeply integrates such sensing with three visual SLAM systems. 
+%This is done to demonstrate the general utility of Wi-Fi signal strength sensing, and how it could complement visual sensing for spatial applications. 
+%In particular, we show that some of the challenges faced by visual SLAM systems such as localization/mapping accuracy and computational complexity could be alleviated with such integration. 
+%In this paper, we propose a method to incorporate the signal information from wireless cards more directly as a pluggable part of RGBD SLAM algorithm to both construct a more accurate map and to reduce the execution time of the algorithm. Our method is complementary to other optimizations made to the RGBD SLAM algorithms.
+
+%\vspace{\vertspcpostsec}

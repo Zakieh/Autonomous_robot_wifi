@@ -1,0 +1,9 @@
+\section{Future Work}\label{future}
+
+Using a Wi-Fi similarity measure will benefit long-term visual SLAM algorithms. Wi-Fi signatures are unique due to the uniqueness of AP BSSIDs and also the signal propagation. Wi-Fi sensing could speed up search for loop closure in SLAM improving the computational complexity of such algorithms. Similarly, spatial locality in Wi-Fi sensing allows for limited search window improving accuracy and avoiding perceptual aliasing. We have demonstrated these features by integrating simple Wi-Fi signal strength sensing with three visual SLAM algorithms. 
+%A quick search with a low cost measure like the Wi-Fi signature similarity across all or a majority of the nodes of the graph will result in high probability candidates for loop closure. This means that if a robot travel long distance before coming back to the same location, it would still be able to perform loop closure fairly quickly. To this end we wish to perform experiments where we let the robot trace much longer trajectories.
+
+\zaki{We believe this approach could be utilized for distinguishing multiple floors in a building through RSSI comparison, but it merits further study.}
+In the future, we hope to use novel wireless sensing technologies such as 60 GHz sensing to improve the overall accuracy as well as computational complexity of SLAM algorithms in general. 
+
+%While RSSI is an aggregate measure to indicate the signal properties of a transmitter, Channel State Information, available with newer COTS wireless cards that support the 802.11n standard, provides denser information about an environment with respect to it's signal propagation properties. A short survey of several papers on localization using this measure suggests that it could be a good candidate for examination in further research.

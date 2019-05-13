@@ -1,0 +1,33 @@
+\vspace{-5pt}
+\section{Discussion}\label{sec:discussion}
+%In this work, we generalize the use of Wi-Fi sensing as a complementary modality to visual SLAM. We demonstrate this by incorporate Wi-Fi sensing into three distinct SLAM algorithms. Specifically, we observe that Wi-Fi sensing can provide coarse locality and incorporate a measure of this (Wi-Fi similarity) to improve SLAM. There are several factors that could affect the potential benefit from Wi-Fi sensing. Some are discussed below.
+We incorporate Wi-Fi sensing into visual SLAM to combat two specific challenges of SLAM indoors --- perceptual aliasing and computational overhead. 
+We discuss the relevance of our work to this community and the implications of some of our choices here.
+
+\zaki{{\bf Extent of Accuracy Improvement:} Wi-Fi clustering improves the accuracy of visual SLAM algorithms through limiting the number of frames which a visual frame is compared against and leads to decreasing the number of false positive and false negative loop closures. Computing more accurate visual transformations between frames in not in the context of this work.} 
+
+
+
+{\bf Relevance to Sensor Systems:} Our work is useful for robots as well as mobile devices. 
+With the advent of RGB-D cameras for mobile devices such as Intel RealSense and augmented reality/mixed reality devices such as the MS Hololens and MagicLeap One, we expect an increase in spatial applications that will use visual SLAM. Therefore, we believe that this topic is of relevance to both robotics and the sensor systems communities. 
+
+{\bf Environmental Dynamics:} Wi-Fi signal strength can vary with environmental dynamics \zaki{and background communications} such as the number of people in the area, the number of devices connected etc.
+\zaki{Our solution is collecting and averaging RSSI information over a few seconds. Our empirical observation from many repeated data collection trials is that this helps in having more stable Wi-Fi signatures at various positions. This will get affected if we perform continuous movement. Depending on the environmental dynamics and the number of wireless clients in a given area, it might or might not affect the wifi clustering}   
+%does not have a significant impact on our similarity measure.
+%\zaki{We decided to use RSSI instead of CSI, because CSI is much more sensitive to any small dynamics in the environment to the extent of being used for gesture detection~\cite{}.}
+
+{\bf Wi-Fi Similarity Tuning:} This parameter is analogous to the {\it min-matches} parameter in visual slam algorithms. 
+We tried many values to find the optimal initialization which seems dependent on the size and the degree of dynamics of the environment. 
+Spaces including more dynamics like A Hall dataset with many people in motion require lower values in order to compensate for fluctuations.
+In general, very high values would increase the number of false negative loop closures and very low values would make it inapplicable for getting rid of perceptual aliases.
+
+{\bf Number of Access Points:} Depending on the placement and number of visible access points, the effectiveness of Wi-Fi sensing might vary.
+The performance gain would increase with higher number of APs especially if they are scattered and not co-linear. Based on our datasets, which reasonably represent modern urban settings, our approach works well with as low as 40 APs scattered around a square shaped environment.
+%
+
+%Depending on the deployment, the number of visible access points, and corresponding ability to sense Wi-Fi might vary. We have collected data from four university buildings that are reasonably representative of modern urban settings. Our approach works where there are at least three APs which is a reasonable assumption these days. 
+%
+ 
+% In summary, Wi-Fi sensing provides coarse locality to mapping. This is potentially useful to improve accuracy (in RGBD SLAM, for example) where the algorithm cannot determine this, and/or running time by comparing to only the relevant frames (in RTAB-Map in some cases). It is also a great tool to determine long-term loop closure. Given the low overhead of computation of Wi-Fi similarity in comparison to visual similarity, we believe that that Wi-Fi sensing could be a useful auxiliary sensing modality for indoor mapping. 
+
+
