@@ -1,46 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: template.aux
 The style file: apalike.bst
 Database file #1: wifislam.bib
-You've used 35 entries,
+You've used 40 entries,
             1935 wiz_defined-function locations,
-            672 strings with 11350 characters,
-and the built_in function-call counts, 18754 in all, are:
-= -- 1922
-> -- 708
-< -- 36
-+ -- 244
-- -- 242
-* -- 1413
-:= -- 2888
-add.period$ -- 119
-call.type$ -- 35
-change.case$ -- 296
-chr.to.int$ -- 35
-cite$ -- 35
-duplicate$ -- 858
-empty$ -- 1375
-format.name$ -- 293
-if$ -- 4057
+            704 strings with 12671 characters,
+and the built_in function-call counts, 21639 in all, are:
+= -- 2221
+> -- 828
+< -- 41
++ -- 286
+- -- 284
+* -- 1641
+:= -- 3336
+add.period$ -- 137
+call.type$ -- 40
+change.case$ -- 342
+chr.to.int$ -- 40
+cite$ -- 40
+duplicate$ -- 982
+empty$ -- 1576
+format.name$ -- 342
+if$ -- 4677
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 34
-newline$ -- 178
-num.names$ -- 105
-pop$ -- 365
+missing$ -- 39
+newline$ -- 203
+num.names$ -- 120
+pop$ -- 412
 preamble$ -- 1
-purify$ -- 296
+purify$ -- 342
 quote$ -- 0
-skip$ -- 676
+skip$ -- 777
 stack$ -- 0
-substring$ -- 1397
-swap$ -- 290
-text.length$ -- 26
+substring$ -- 1613
+swap$ -- 333
+text.length$ -- 30
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 210
+type$ -- 240
 warning$ -- 0
-while$ -- 142
+while$ -- 164
 width$ -- 0
-write$ -- 477
+write$ -- 551

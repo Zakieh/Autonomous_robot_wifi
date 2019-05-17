@@ -25,7 +25,7 @@ In robotics literature, there has been research on Wi-Fi localization~\cite{bisw
 Similarly, wireless localization is a hot topic in mobile computing.~\cite{yang-mobicom12,luo-ipsn14} use wireless fingerprinting for localization. 
 SpotFi~\cite{kotaru-sigcomm15}, Monoloco~\cite{soltanaghaei-mobisys18} and \cite{karanam_ipsn18} use channel state information (CSI) to achieve decimeter-level localization. 
 \cite{kumar2018indoor} employ CSI and inertial measurements for delivering more accurate localization. 
-\zaki{In these literature, RSSI or CSI is the only sensing method employed for localization/SLAM and most of them require a training phase for creating a map of Wi-Fi data.}
+\zaki{In these literature, RSSI or CSI is employed either for localization of the robot or for SLAM where the landmarks are Wi-Fi Access Points (APs). We also note that most of them require a training phase for the collection of Wi-Fi data. In our work, we improve visual 3D maps rather than mapping just the APs and our method does not require a training phase.}
 %Another proposal~\cite{wifi-n-slam-1} adapts a Bayesian framework for SLAM using Inertial Measurement Units and Wi-Fi sensing. 
 %In~\cite{signal-slam}, the authors propose using Wi-Fi along with other sensor data such as Bluetooth, magnetic field magnitude, NFC etc., to build signal maps for localization of people. 
 %Similarly, there has been significant research on wireless localization in the mobile systems and mobile networking literature. 
@@ -33,6 +33,8 @@ SpotFi~\cite{kotaru-sigcomm15}, Monoloco~\cite{soltanaghaei-mobisys18} and \cite
 %~\cite{chintalapudi-mobicom10} addressed the challenge of pre-deployment effort for wifi localization. 
 %The authors propose a central EZ localization algorithm that incorporates the physics of wireless propagation, limited known positions and streams of wireless measurements from various devices in an indoor environment using a genetic algorithm to achieve accurate location information. 
 %Zee~\cite{rai-mobicom12} improves this by using inertial sensors onboard mobile devices to reduce the calibration effort and crowd source WiFi fingerprints in a building. 
+
+\textbf{RF-assisted positioning systems:} \charu{Other RF-assisted localization and mapping systems have been proposed in literature using geomagnetism \cite{JUNG201592,7759302}, electromagnetism \cite{Lu:2018:SLM:3241539.3241540} and visible lights \cite{Zhang:2016:LRI:2973750.2973767,Kuo:2014:LIP:2639108.2639109}. In this work, we chose to use Wi-Fi signals from commodity wireless cards to improve visual SLAM due to its ubiquity in indoor environments.}
 
 \textbf{Perceptual Aliasing:} %There has been significant effort to overcome perceptual aliasing in visual SLAM algorithms. 
 \cite{cam-oscillations} incorporates a hardware solution to enhance feature measurements and localization by adding lateral motion to the camera.~\cite{sens-fus-2,sens-fus-3} combine information from multiple sensors for increasing localization and mapping accuracy.

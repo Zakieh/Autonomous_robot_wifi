@@ -102,6 +102,12 @@ Jacobson, A., Chen, Z., Rallabandi, V.~R., and Milford, M. (2015).
 \newblock In {\em Australasian Conference on Robotics and Automation (ACRA
   2015)}, Canberra, A.C.T. Australasian Robotics and Automation Association.
 
+\bibitem[Jung et~al., 2015]{JUNG201592}
+Jung, J., Oh, T., and Myung, H. (2015).
+\newblock Magnetic field constraints and sequence-based matching for indoor
+  pose graph slam.
+\newblock {\em Robotics and Autonomous Systems}, 70:92 -- 105.
+
 \bibitem[Kabsch, 1976]{kabsch}
 Kabsch, W. (1976).
 \newblock A solution for the best rotation to relate two sets of vectors.
@@ -132,6 +138,13 @@ Kumar, S.~S., Gil, S., Katabi, D., and Rus, D. (2018).
 \newblock Indoor localization of a multi-antenna receiver.
 \newblock US Patent 9,885,774.
 
+\bibitem[Kuo et~al., 2014]{Kuo:2014:LIP:2639108.2639109}
+Kuo, Y.-S., Pannuto, P., Hsiao, K.-J., and Dutta, P. (2014).
+\newblock Luxapose: Indoor positioning with mobile phones and visible light.
+\newblock In {\em Proceedings of the 20th Annual International Conference on
+  Mobile Computing and Networking}, MobiCom '14, pages 447--458, New York, NY,
+  USA. ACM.
+
 \bibitem[Labbe and Michaud, 2014]{memory_management2}
 Labbe, M. and Michaud, F. (2014).
 \newblock Online global loop closure detection for large-scale multi-session
@@ -151,6 +164,15 @@ Labbé, M. and Michaud, F. (2013).
 \newblock Appearance-based loop closure detection for online large-scale and
   long-term operation.
 \newblock {\em IEEE Transactions on Robotics}, 29(3):734--745.
+
+\bibitem[Lu et~al., 2018]{Lu:2018:SLM:3241539.3241540}
+Lu, C.~X., Li, Y., Zhao, P., Chen, C., Xie, L., Wen, H., Tan, R., and Trigoni,
+  N. (2018).
+\newblock Simultaneous localization and mapping with power network
+  electromagnetic field.
+\newblock In {\em Proceedings of the 24th Annual International Conference on
+  Mobile Computing and Networking}, MobiCom '18, pages 607--622, New York, NY,
+  USA. ACM.
 
 \bibitem[Luo et~al., 2014]{luo-ipsn14}
 Luo, C., Hong, H., and Chan, M.~C. (2014).
@@ -206,6 +228,13 @@ Soltanaghaei, E., Kalyanaraman, A., and Whitehouse, K. (2018).
   Mobile Systems, Applications, and Services}, MobiSys '18, pages 376--388, New
   York, NY, USA. ACM.
 
+\bibitem[{Wang} et~al., 2016]{7759302}
+{Wang}, S., {Wen}, H., {Clark}, R., and {Trigoni}, N. (2016).
+\newblock Keyframe based large-scale indoor localisation using geomagnetic
+  field and motion pattern.
+\newblock In {\em 2016 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}, pages 1910--1917.
+
 \bibitem[Xia et~al., 2016]{perceptual_aliasing1}
 Xia, Y., Li, J., Qi, L., and Fan, H. (2016).
 \newblock Loop closure detection for visual slam using pcanet features.
@@ -232,6 +261,13 @@ Yang, Z., Wu, C., and Liu, Y. (2012).
   little human intervention.
 \newblock In {\em Proceedings of the 18th Annual International Conference on
   Mobile Computing and Networking}, Mobicom '12, pages 269--280, New York, NY,
+  USA. ACM.
+
+\bibitem[Zhang and Zhang, 2016]{Zhang:2016:LRI:2973750.2973767}
+Zhang, C. and Zhang, X. (2016).
+\newblock Litell: Robust indoor localization using unmodified light fixtures.
+\newblock In {\em Proceedings of the 22Nd Annual International Conference on
+  Mobile Computing and Networking}, MobiCom '16, pages 230--242, New York, NY,
   USA. ACM.
 
 \end{thebibliography}
