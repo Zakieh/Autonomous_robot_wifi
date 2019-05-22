@@ -291,10 +291,10 @@ As previously mentioned, there are only 8 Wi-Fi clusters created in this very la
 A low number of Wi-Fi clusters in a large environment lead to a very high number of keyframes in each cluster. 
 In this situation, visual comparison to even one single {similar cluster} takes more time while the original approach is transferring many nodes to LTM due to the low {\it real-time threshold} and does a very low number of visual comparisons.
 
-\zaki{It should be noted that if we increase the Wi-Fi similarity threshold, the number of clusters would increase which may help in reducing the loop closure computation time. But it would also decrease the number of detected similar clusters for each frame which may lead to loosing some correct loop closures.}
+\zaki{It should be noted that if we increase the Wi-Fi similarity threshold, the number of clusters would increase which may help in reducing the loop closure computation time. But it would also decrease the number of detected similar clusters for each frame which may lead to losing some correct loop closures.}
 
 \begin{table}
-\caption{{\bf RTAB-Map:} Compute overheadi (s) of {Wi-Fi clustering} and {cluster management} for different datasets and different {\it real-time thresholds}}
+\caption{{\bf RTAB-Map:} Compute overhead (s) of {Wi-Fi clustering} and {cluster management} for different datasets and different {\it real-time thresholds}}
 \begin{center}
 \begin{tabular}{| c | r | r | r | r | } 
 \hline 
